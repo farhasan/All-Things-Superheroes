@@ -37,10 +37,7 @@ An Example Comic with references to Characters and Events:
   title: "Super Comic #1",
   issueNumber: 3,
   description: "Super McCooper goes undercover as a superhero!",
-  image: {
-    path: //example image path
-    extension: "jpg"
-  }
+  image: //path
   characters: //list of character names and the links leading to the characters
   events: //list of event names and links leading to the events
 }
@@ -57,16 +54,24 @@ An Example Character:
 }
 ```
 
+An Example Event:
+
+```javascript
+{
+  title: "Spider-Man",
+  description: "A guy who crawls like a spider",
+  comics: // list of comic names and links leading to those comics
+  characters: // list of characters who were there at event
+}
+```
+
 A Custom Hero:
 
 ```javascript
 {
   name: "My Custom Guy",
   description: "A guy who crawls like a spider",
-  image: {
-    path: //path to uploaded image
-    extension: //picture type
-  }
+  image: //path
   user: // reference to user
 }
 ```
@@ -74,33 +79,37 @@ A Custom Hero:
 
 ## [Link to Commented First Draft Schema](db.js) 
 
-(___TODO__: create a first draft of your Schemas in db.js and link to it_)
-
 ## Wireframes
 
-(___TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc._)
+/search/comic - page for searching for comics
 
-/list/create - page for creating a new shopping list
+![comic search](documentation/comic_search.png)
 
-![list create](documentation/list-create.png)
+/search/characters - page for searching for characters
 
-/list - page for showing all shopping lists
+![character search](documentation/character_search.png)
 
-![list](documentation/list.png)
+/search/events - page for searching for events
 
-/list/slug - page for showing specific shopping list
+![event search](documentation/event_search.png)
 
-![list](documentation/list-slug.png)
+/login - page for logging in
+
+![login](documentation/login.png)
+
+/create - page for creating custom hero
+
+![hero create](documentation/custom_hero_create.png)
+
+/list - page for showing list of custom heroes
+
+![hero list](documentation/hero_view.png)
 
 ## Site map
 
-(___TODO__: draw out a site map that shows how pages are related to each other_)
-
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
+![sitemap](documentation/site_map.png)
 
 ## User Stories or Use Cases
-
-(___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
 
 1. as a non-registered user, I can register a new account with the site
 2. as a non-registered user, I can search for a comic character, comic book, or notable comic event
@@ -112,27 +121,20 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 
 (___TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed_)
 
-* (5 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * And account has been made for testing; I'll email you the password
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Perform client side form validation using a JavaScript library
-    * see <code>cs.nyu.edu/~jversoza/ait-final/my-form</code>
-    * if you put in a number that's greater than 5, an error message will appear in the dom
-* (5 points) vue.js
-    * used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
+(5 points) Integrate user authentication
+  -will try to incorporate users local to the site in addition to social media logins
+(3 points) Perform client side form validation using custom JavaScript or JavaScript library
+(1 - 6 points) Use a client-side JavaScript library or module that we did not cover in class (not including any from other requirements)
+  -will try to incorporate vue.js
+(1 - 6 points) Per external API used
+  -marvel developer api, dc comics api
 
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit_)
+min: 10 points
+max: 20 points
 
 
 ## [Link to Initial Main Project File](app.js) 
 
-(___TODO__: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js_)
 
 ## Annotations / References Used
 
-(___TODO__: list any tutorials/references/etc. that you've based your code off of_)
-
-1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [tutorial on vue.js](https://vuejs.org/v2/guide/) - (add link to source code that was based on this)
