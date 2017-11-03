@@ -18,7 +18,6 @@ The application will store Users, Comics, Characters, Events, and Custom Heroes.
 * characters will have references to comics and events through the comic and event titles, 
 * custom heroes will have references to the user that created them
 
-(___TODO__: sample documents_)
 
 An Example User:
 
@@ -119,8 +118,6 @@ A Custom Hero:
 
 ## Research Topics
 
-(___TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed_)
-
 (5 points) Integrate user authentication
   -will try to incorporate users local to the site in addition to social media logins
 (3 points) Perform client side form validation using custom JavaScript or JavaScript library
@@ -133,7 +130,7 @@ min: 10 points
 max: 20 points
 
 
-## [Link to Initial Main Project File](app.js) 
+## [Link to Initial Main Project File](src/allThingsSuperheroes/app.js) 
 
 
 ## Annotations / References Used
