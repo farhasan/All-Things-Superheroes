@@ -1,26 +1,22 @@
-The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
-
-(___TODO__: your project name_)
-
-# Shoppy Shoperson 
+# All Things Superheroes! 
 
 ## Overview
 
-(___TODO__: a brief one or two paragraph, high-level description of your project_)
+All Things Superheroes is a web app which allows users to find any comic series, comic book character, comic issue or comic event that the user could ask for.* 
 
-Remembering what to buy at the grocery store is waaaaay too difficult. Also, shopping for groceries when you're hungry leads to regrettable purchases. Sooo... that's where Shoppy Shoperson comes in!
+Users can also register and login to add their own superhero, and keep a list of their creations! Users will give their superheroes names and can supply a short summary of the character and an image of the character.
 
-Shoppy Shoperson is a web app that will allow users to keep track of multiple grocery lists. Users can register and login. Once they're logged in, they can create or view their grocery list. For every list that they have, they can add items to the list or cross off items.
+Note: * -> only Marvel or DC!
 
 
 ## Data Model
 
-(___TODO__: a description of your application's data and their relationships to each other_) 
+The application will store Users, Comics, Characters, Events, and Custom Heroes.
 
-The application will store Users, Lists and Items
-
-* users can have multiple lists (via references)
-* each list can have multiple items (by embedding)
+* users can have multiple custom heroes through references to them
+* comics will have characters and events through referring to them
+* characters will have references to comics and events through the comic and event titles, 
+* custom heroes will have references to the user that created them
 
 (___TODO__: sample documents_)
 
@@ -28,23 +24,50 @@ An Example User:
 
 ```javascript
 {
-  username: "shannonshopper",
+  username: "heromaker1",
   hash: // a password hash,
-  lists: // an array of references to List documents
+  customHeroes: // an array of references to customHero documents
 }
 ```
 
-An Example List with Embedded Items:
+An Example Comic with references to Characters and Events:
 
 ```javascript
 {
-  user: // a reference to a User object
-  name: "Breakfast foods",
-  items: [
-    { name: "pancakes", quantity: "9876", checked: false},
-    { name: "ramen", quantity: "2", checked: true},
-  ],
-  createdAt: // timestamp
+  title: "Super Comic #1",
+  issueNumber: 3,
+  description: "Super McCooper goes undercover as a superhero!",
+  image: {
+    path: //example image path
+    extension: "jpg"
+  }
+  characters: //list of character names and the links leading to the characters
+  events: //list of event names and links leading to the events
+}
+```
+
+An Example Character:
+
+```javascript
+{
+  name: "Spider-Man",
+  description: "A guy who crawls like a spider",
+  comics: // list of comic names and links leading to those comics
+  events: // list of event names and links leading to those events
+}
+```
+
+A Custom Hero:
+
+```javascript
+{
+  name: "My Custom Guy",
+  description: "A guy who crawls like a spider",
+  image: {
+    path: //path to uploaded image
+    extension: //picture type
+  }
+  user: // reference to user
 }
 ```
 
@@ -79,12 +102,11 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 
 (___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
 
-1. as non-registered user, I can register a new account with the site
-2. as a user, I can log in to the site
-3. as a user, I can create a new grocery list
-4. as a user, I can view all of the grocery lists I've created in a single list
-5. as a user, I can add items to an existing grocery list
-6. as a user, I can cross off items in an existing grocery list
+1. as a non-registered user, I can register a new account with the site
+2. as a non-registered user, I can search for a comic character, comic book, or notable comic event
+3. as a user, I can log in to the site
+4. as a user, I can create a custom hero
+5. as a user, I can add my hero to a list of already existing custom heroes
 
 ## Research Topics
 
