@@ -130,7 +130,7 @@ min: 10 points
 max: 20 points
 
 
-## [Link to Initial Main Project File](src/allThingsSuperheroes/app.js) 
+## [Link to Initial Main Project File](./src/allThingsSuperheroes/app.js) 
 
 
 ## Annotations / References Used
