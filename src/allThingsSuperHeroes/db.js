@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const config = require('./config');
 
 /*
 const Comic = new mongoose.Schema({ //comic specific issue
@@ -49,8 +48,15 @@ const CustomHero = new mongoose.Schema({ //customhero made by the user
 if (process.env.NODE_ENV === 'PRODUCTION') {
     // if we're in PRODUCTION mode, then read the configration from a file
     // use blocking file io to do this...
-    const connection = config.connection;
-    var dbconf = connection.dbconf;
+    const fs = require('fs');
+    const path = require('path');
+    const fn = path.join(__dirname, 'config.json');
+    const data = fs.readFileSync(fn);
+
+    // our configuration file will be in json, so parse it and set the
+    // conenction string appropriately!
+    const conf = JSON.parse(data);
+    var dbconf = conf.dbconf;
 } else {
     // if we're not in PRODUCTION mode, then use
     dbconf = 'mongodb://localhost/example_db';
