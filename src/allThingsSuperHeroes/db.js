@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/example_db');
+const User = new mongoose.Schema({ //user that registers and uses the site
+    username: String,
+    hash: String,
+    customHeroes: [CustomHero]
+});
 
 const Character = new mongoose.schema({ //comic book character
     name: String,
@@ -14,19 +18,13 @@ const Event = new mongoose.schema({ //notable event in a comic book
     description: String,
     comics: [Comic],
     characters: [Character]
-})
+});
 
-const customHero = new mongoose.schema({ //customhero made by the user
+const CustomHero = new mongoose.schema({ //customhero made by the user
    name: String,
    description: String,
    image: String,
     user: User
-});
-
-const User = new mongoose.Schema({ //user that registers and uses the site
-    username: String,
-    hash: String,
-    customHeroes: [customHero]
 });
 
 const Comic = new mongoose.Schema({ //comic specific issue
@@ -41,6 +39,8 @@ const Comic = new mongoose.Schema({ //comic specific issue
 
 mongoose.model('Character', Character);
 mongoose.model('Event', Event);
-mongoose.model('customHero', customHero);
+mongoose.model('CustomHero', CustomHero);
 mongoose.model('User', User);
 mongoose.model('Comic', Comic);
+
+mongoose.connect('mongodb://localhost/example_db');
