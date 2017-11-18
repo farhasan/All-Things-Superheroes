@@ -9,14 +9,14 @@ const Comic = new mongoose.Schema({ //comic specific issue
     characters: [Character],
     events: [Event]
 });
-
-const Character = new mongoose.schema({ //comic book character
+*/
+const Character = new mongoose.Schema({ //comic book character
     name: String,
-    description: String,
-    comics: [Comic],
-    events: [Event]
+    description: String
+    //comics: [Comic],
+    //events: [Event]
 });
-
+/*
 
 const Event = new mongoose.schema({ //notable event in a comic book
     title: String,
@@ -66,3 +66,4 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
 mongoose.connect(dbconf);
 
 mongoose.model('CustomHero', CustomHero);
+mongoose.model('Character', Character);
