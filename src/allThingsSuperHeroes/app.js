@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const request = require('request');
+const crypto = require('crypto');
 const path = require("path");
 const publicPath = path.resolve(__dirname, "public");
 
@@ -36,6 +37,27 @@ function replaceSpaces(name) {
      return name.replace(' ', '%20')
  }
 
+const fs = require('fs');
+const fn = path.join(__dirname, 'config.json');
+const data = fs.readFileSync(fn);
+
+// our configuration file will be in json, so parse it and set the
+// conenction string appropriately!
+const obj = JSON.parse(data);
+let prk = obj.marvel_private_key;
+let pbk = obj.marvel_public_key;
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+let ts = (getRandomInt(1,10)).toString();
+let fullhash = ts + prk + pbk;
+let md5hash = crypto.createHash('md5').update(fullhash).digest('hex');
+
+let url;
 
 app.get('/', function (req, res) {
     res.render('index', {'customHeroes' : customHeroesArray});
@@ -54,9 +76,10 @@ app.post('/', function (req, res) {
         }
 
         else if (req.body.charName) {
-
-            let url = 'http://gateway.marvel.com/v1/public/characters?name=' + replaceSpaces(req.body.charName) + '&ts=1&apikey=5629e6c2661df9b10c9738196f0f6505&hash=72650503f6ea6f94f89967ccbc6e465d';
-            request(url,
+            request(url = 'http://gateway.marvel.com/v1/public/characters?name=' +
+                replaceSpaces(req.body.charName) +
+                '&ts=' + ts + '&apikey=' + pbk + '&hash=' +
+                md5hash,
                 function(err, res, body){
                     if (err) {
                         console.log("No character found!");
