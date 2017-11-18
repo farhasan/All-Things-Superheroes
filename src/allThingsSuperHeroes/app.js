@@ -32,6 +32,10 @@ Character.find(function (err, characters){
     }
 });*/
 
+function replaceSpaces(name) {
+     return name.replace(' ', '%20')
+ }
+
 
 app.get('/', function (req, res) {
     res.render('index', {'customHeroes' : customHeroesArray});
@@ -51,7 +55,7 @@ app.post('/', function (req, res) {
 
         else if (req.body.charName) {
 
-            let url = 'http://gateway.marvel.com/v1/public/characters?name=' + req.body.charName + '&ts=1&apikey=5629e6c2661df9b10c9738196f0f6505&hash=72650503f6ea6f94f89967ccbc6e465d';
+            let url = 'http://gateway.marvel.com/v1/public/characters?name=' + replaceSpaces(req.body.charName) + '&ts=1&apikey=5629e6c2661df9b10c9738196f0f6505&hash=72650503f6ea6f94f89967ccbc6e465d';
             request(url,
                 function(err, res, body){
                     if (err) {
