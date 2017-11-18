@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5aaffbc1-885f-4d1e-ac72-3a07fe7efc51" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/allThingsSuperHeroes/app.js" afterPath="$PROJECT_DIR$/src/allThingsSuperHeroes/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs" afterPath="$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="33" column="91" lean-forward="false" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
+            <state relative-caret-position="353">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,8 +71,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+            <state relative-caret-position="210">
+              <caret line="87" column="52" lean-forward="false" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -111,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/heroes.js" />
         <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/characters.js" />
         <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/views/characters.hbs" />
-        <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs" />
         <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs" />
         <option value="$PROJECT_DIR$/src/allThingsSuperHeroes/app.js" />
       </list>
     </option>
@@ -177,6 +176,21 @@
               <item name="fih207-final-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="allThingsSuperHeroes" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fih207-final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fih207-final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="allThingsSuperHeroes" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fih207-final-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fih207-final-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="allThingsSuperHeroes" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -197,7 +211,12 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/allThingsSuperHeroes/public/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/allThingsSuperHeroes/views" />
+      <recent name="$PROJECT_DIR$/src/allThingsSuperHeroes/public/assets" />
       <recent name="$PROJECT_DIR$/src/allThingsSuperHeroes" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -245,12 +264,12 @@
       <workItem from="1509680804859" duration="458000" />
       <workItem from="1510254327049" duration="5850000" />
       <workItem from="1510281633102" duration="5453000" />
-      <workItem from="1510964081577" duration="16559000" />
+      <workItem from="1510964081577" duration="17931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30868000" />
+    <option name="totallyTimeSpent" value="32240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="42" width="1400" height="758" extended-state="0" />
@@ -488,14 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="33" column="91" lean-forward="false" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -507,15 +518,23 @@
     <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/allThingsSuperHeroes/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="87" column="52" lean-forward="false" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
           <folding />
         </state>
       </provider>

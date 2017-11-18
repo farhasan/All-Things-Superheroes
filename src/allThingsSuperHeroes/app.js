@@ -85,6 +85,7 @@ app.post('/', function (req, res) {
                         console.log("No character found!");
                     }
                     else {
+                        console.log('request made');
                         let json = JSON.parse(body);
                         setTimeout(function() {
                             character = json['data']['results'][0];
