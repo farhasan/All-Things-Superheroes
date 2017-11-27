@@ -34,8 +34,8 @@ Character.find(function (err, characters){
 });*/
 
 function replaceSpaces(name) {
-     return name.replace(' ', '%20')
- }
+    return name.replace(' ', '%20')
+}
 
 const fs = require('fs');
 const fn = path.join(__dirname, 'config.json');
