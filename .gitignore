@@ -1,2 +1,16 @@
-config.json
 .DS_Store
+All\ Things\ SuperHeroes\ \(Client\ +\ Server\)/client/node_modules/
+All\ Things\ SuperHeroes\ \(Client\ +\ Server\)/server/node_modules
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+All\ Things\ SuperHeroes\ \(Client\ +\ Server\)/client/test/unit/coverage/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
