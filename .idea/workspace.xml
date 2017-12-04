@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53bc9dd2-2e70-4707-bbc9-d3cc0c0a7183" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/configurationInfo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CharacterView.vue" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Characters.vue" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Characters.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/authenticationService.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/authenticationService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,18 +21,30 @@
       <file leaf-file-name="Characters.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Characters.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+            <state relative-caret-position="199">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CharacterView.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CharacterView.vue">
+      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="668">
+              <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+              <folding>
+                <element signature="e#1841#1862#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,16 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="80" column="1" lean-forward="false" selection-start-line="71" selection-start-column="2" selection-end-line="80" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -284,7 +281,7 @@
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
@@ -310,12 +307,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512358658826</updated>
-      <workItem from="1512358660896" duration="15402000" />
+      <workItem from="1512358660896" duration="18739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15402000" />
+    <option name="totallyTimeSpent" value="18739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="29" width="1810" height="970" extended-state="0" />
@@ -402,14 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Welcome.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -431,16 +420,6 @@
         <state relative-caret-position="315">
           <caret line="41" column="61" lean-forward="false" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
-          <folding>
-            <element signature="e#1841#1862#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,14 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CharacterView.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -564,10 +535,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+          <folding>
+            <element signature="e#1841#1862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CharacterView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Characters.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        <state relative-caret-position="199">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding />
         </state>
       </provider>
