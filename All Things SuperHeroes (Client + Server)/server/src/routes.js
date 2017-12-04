@@ -13,4 +13,5 @@ module.exports = function (app) {
   )
   app.post('/characters', marvelController.findChar)
   app.post('/series', marvelController.findSeries)
+  app.post('/events', marvelController.findEvent)
 }

@@ -6,5 +6,8 @@ export default {
   },
   findSeries (series) {
     return api().post('series', series)
+  },
+  findEvent (event) {
+    return api().post('events', event)
   }
 }

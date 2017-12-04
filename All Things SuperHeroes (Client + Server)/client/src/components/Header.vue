@@ -20,10 +20,7 @@
               <a class="navbar-item" @click="goTo({path: '/series'})">
                 Comic Book Series
               </a>
-              <a class="navbar-item" href="#">
-                Comic Book Issue
-              </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" @click="goTo({path: '/events'})">
                 Event
               </a>
               <a class="navbar-item" href="#">
