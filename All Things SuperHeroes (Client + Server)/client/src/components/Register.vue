@@ -27,7 +27,6 @@
 </template>
 
 <script>
-
 import authenticationService from '@/services/authenticationService'
 
 export default {
@@ -35,10 +34,12 @@ export default {
   methods: {
     async register () {
       try {
-        await authenticationService.register({
+        const response = await authenticationService.register({
           username: this.username,
           password: this.password
         })
+        this.$store.dispatch('setToken', response.data.token)
+        this.$store.dispatch('setUser', response.data.user)
       } catch (error) {
         this.error = error.response.data.error
       }

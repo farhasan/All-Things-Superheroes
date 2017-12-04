@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-var uniqueValidator = require('mongoose-unique-validator');
+var uniqueValidator = require('mongoose-unique-validator')
 
 // /*
 // const Comic = new mongoose.Schema({ //comic specific issue
