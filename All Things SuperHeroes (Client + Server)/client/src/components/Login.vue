@@ -22,7 +22,7 @@
     </div>
     <div class="error" v-text="error"></div>
     <br>
-    <button class="button is-primary" @click="login">Login</button>
+    <button class="button is-primary" @click="login()">Login</button>
   </div>
 </template>
 
@@ -40,6 +40,10 @@
           })
           this.$store.dispatch('setToken', response.data.token)
           this.$store.dispatch('setUser', response.data.user)
+
+          this.$router.push({
+            path: '/'
+          })
         } catch (error) {
           this.error = error.response.data.error
         }

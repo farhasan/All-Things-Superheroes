@@ -3,7 +3,7 @@
     <nav class="navbar is-transparent">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <h1 id="title">All Things Superheroes</h1>
+          <h1 id="title" @click="goTo({path: '/'})">All Things Superheroes</h1>
         </a>
       </div>
 
@@ -14,7 +14,7 @@
               Search
             </a>
             <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" @click="goTo({path: '/characters'})">
                 Characters
               </a>
               <a class="navbar-item" href="#">
@@ -31,11 +31,23 @@
               </a>
             </div>
           </div>
-          <a class="navbar-item" href="/login">
+          <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" @click="goTo({path: '/login'})">
             Login
           </a>
-          <a class="navbar-item" href="/register">
+          <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" onclick="goTo({path: '/register'})">
             Register
+          </a>
+          <a v-if="$store.state.isUserLoggedIn" class="navbar-item" href="#">
+            Create a Custom Hero
+          </a>
+        </div>
+
+        <div v-if="$store.state.isUserLoggedIn" class="navbar-end">
+          <p class="navbar-item">
+            Welcome {{$store.state.user.username}}!
+          </p>
+          <a class="navbar-item" @click="logout">
+            Logout
           </a>
         </div>
       </div>
@@ -51,7 +63,21 @@
   Vue.use(Buefy)
 
   export default {
-    name: 'app'
+    name: 'app',
+    methods: {
+      goTo (path) {
+//        this.$store.dispatch('setToken', response.data.token)
+//        this.$store.dispatch('setUser', response.data.user)
+        this.$router.push(path)
+      },
+      logout () {
+        this.$store.dispatch('setToken', null)
+        this.$store.dispatch('setUser', null)
+        this.$router.push({
+          path: '/'
+        })
+      }
+    }
   }
 </script>
 
