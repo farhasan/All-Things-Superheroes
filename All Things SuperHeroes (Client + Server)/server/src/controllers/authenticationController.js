@@ -5,7 +5,7 @@ const User = mongoose.model('User')
 
 const crypto = require('crypto')
 const jwt = require('jsonwebtoken')
-const config = require('../../configurationInfo')
+const config = require('../../theConfigurationInfo')
 
 function signIn (user) {
   const secondsInWeek = 60 * 60 * 24 * 7

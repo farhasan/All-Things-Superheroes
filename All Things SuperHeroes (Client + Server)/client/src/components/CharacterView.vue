@@ -38,10 +38,9 @@
 
 <script>
   import MarvelService from '@/services/MarvelService'
-  import CharacterView from '@/components/CharacterView'
 
   export default {
-    name: 'characters',
+    name: 'characterview',
     data () {
       return {
         character: null,
@@ -51,19 +50,7 @@
       }
     },
     methods: {
-      async searchCharacter () {
-        try {
-          console.log(this.characterName)
-          const response = await MarvelService.findChar({
-            characterName: this.characterName
-          })
-          this.character = response['data']
-          console.log(this.character)
-          this.characterExists = true
-        } catch (error) {
-          this.error = error.response.data.error
-        }
-      }
+
     }
   }
 </script>

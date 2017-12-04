@@ -1,10 +1,6 @@
 const authenticationController = require('./controllers/authenticationController')
 const authenticationControllerPolicy = require('./policies/authenticationControllerPolicy')
-const marvelAPI = require('marvel-api')
-
-const marvel = marvelAPI.createClient({
-
-})
+const charactersController = require('./controllers/CharactersController')
 
 module.exports = function (app) {
   app.post('/register',
@@ -15,8 +11,5 @@ module.exports = function (app) {
     // authenticationControllerPolicy.login,
     authenticationController.login
   )
-  app.get('/characters',
-
-
-  )
+  app.post('/characters', charactersController.findChar)
 }

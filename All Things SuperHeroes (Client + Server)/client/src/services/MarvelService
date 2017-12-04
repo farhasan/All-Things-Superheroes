@@ -1,0 +1,7 @@
+import api from './api'
+
+export default {
+  findChar (character) {
+    return api().post('characters', character)
+  }
+}
