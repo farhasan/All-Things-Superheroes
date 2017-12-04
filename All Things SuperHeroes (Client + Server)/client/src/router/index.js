@@ -4,6 +4,7 @@ import Welcome from '@/components/Welcome'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Characters from '@/components/Characters'
+import Series from '@/components/ComicSeries'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/characters',
       name: 'characters',
       component: Characters
+    },
+    {
+      path: '/series',
+      name: 'series',
+      component: Series
     }
   ],
   mode: 'history'

@@ -1,6 +1,6 @@
 const authenticationController = require('./controllers/authenticationController')
 const authenticationControllerPolicy = require('./policies/authenticationControllerPolicy')
-const charactersController = require('./controllers/CharactersController')
+const marvelController = require('./controllers/MarvelController')
 
 module.exports = function (app) {
   app.post('/register',
@@ -11,5 +11,6 @@ module.exports = function (app) {
     // authenticationControllerPolicy.login,
     authenticationController.login
   )
-  app.post('/characters', charactersController.findChar)
+  app.post('/characters', marvelController.findChar)
+  app.post('/series', marvelController.findSeries)
 }

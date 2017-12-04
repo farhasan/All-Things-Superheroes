@@ -21,15 +21,23 @@ module.exports = {
         if (req.body.characterName) {
             let data;
             marvel.characters.findByName(req.body.characterName)
-                .then(function (res) {
-                    data = res.data
+                .then(function (resp) {
+                    res.send(resp.data)
                 })
                 .fail(console.error)
                 .done()
-            setTimeout(function() {
-                res.send(data)
-            }, 500);
+            }
+        },
 
+    findSeries(req, res) {
+        if (req.body.seriesName) {
+            // let data
+            marvel.series.findByTitle(req.body.seriesName)
+                .then(function (resp) {
+                    res.send(resp.data)
+                })
+                .fail(console.error)
+                .done()
+            }
         }
     }
-}

@@ -17,7 +17,7 @@
               <a class="navbar-item" @click="goTo({path: '/characters'})">
                 Characters
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" @click="goTo({path: '/series'})">
                 Comic Book Series
               </a>
               <a class="navbar-item" href="#">
@@ -66,8 +66,6 @@
     name: 'app',
     methods: {
       goTo (path) {
-//        this.$store.dispatch('setToken', response.data.token)
-//        this.$store.dispatch('setUser', response.data.user)
         this.$router.push(path)
       },
       logout () {

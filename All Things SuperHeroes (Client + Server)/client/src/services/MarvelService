@@ -3,5 +3,8 @@ import api from './api'
 export default {
   findChar (character) {
     return api().post('characters', character)
+  },
+  findSeries (series) {
+    return api().post('series', series)
   }
 }
