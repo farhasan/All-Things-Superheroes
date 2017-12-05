@@ -3,7 +3,8 @@
     <h1>Welcome!</h1><br>
     <h2>This is a Comic Book Encyclopedia drawing data from Marvel and DC APIs*.</h2>
     <h2>On the client's side, Vue.js is being used along with the frontend framework Buefy</h2>
-    <h2>On the backend, this is using Express and MongoDB in addition to multiple frameworks such as Joi for user validation, </h2>
+    <h2>On the backend, this is using Express and MongoDB in addition to multiple frameworks and</h2>
+    <h2>packages such as Joi for user validation and Vuex for maintaing login state</h2>
     <br><br>
 
     <h2>Try selecting one of the search options above to search for something cool!</h2>

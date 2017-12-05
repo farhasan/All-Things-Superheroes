@@ -6,16 +6,15 @@ All Things Superheroes is a web app which allows users to find any comic series,
 
 Users can also register and login to add their own superhero, and keep a list of their creations! Users will give their superheroes names and can supply a short summary of the character and an image of the character.
 
-Note: * -> only Marvel or DC!
+Note: * -> only Marvel or DC * *!
+      * * -> DC API is discontinued so only Marvel
 
 
 ## Data Model
 
-The application will store Users, Comics, Characters, Events, and Custom Heroes.
+The application will store Users and Custom Heroes.
 
 * users can have multiple custom heroes through references to them
-* comics will have characters and events through referring to them
-* characters will have references to comics and events through the comic and event titles, 
 * custom heroes will have references to the user that created them
 
 
@@ -25,42 +24,6 @@ An Example User:
 {
   username: "heromaker1",
   hash: // a password hash,
-  customHeroes: // an array of references to customHero documents
-}
-```
-
-An Example Comic with references to Characters and Events:
-
-```javascript
-{
-  title: "Super Comic #1",
-  issueNumber: 3,
-  description: "Super McCooper goes undercover as a superhero!",
-  image: //path
-  characters: //list of character names and the links leading to the characters
-  events: //list of event names and links leading to the events
-}
-```
-
-An Example Character:
-
-```javascript
-{
-  name: "Spider-Man",
-  description: "A guy who crawls like a spider",
-  comics: // list of comic names and links leading to those comics
-  events: // list of event names and links leading to those events
-}
-```
-
-An Example Event:
-
-```javascript
-{
-  title: "Spider-Man",
-  description: "A guy who crawls like a spider",
-  comics: // list of comic names and links leading to those comics
-  characters: // list of characters who were there at event
 }
 ```
 
@@ -71,9 +34,11 @@ A Custom Hero:
   name: "My Custom Guy",
   description: "A guy who crawls like a spider",
   image: //path
-  user: // reference to user
+  user: // username of associated user
 }
 ```
+
+The application uses external APIs to get info about comics, so that information is not stored in the database
 
 
 ## [Link to Commented First Draft Schema](db.js) 
@@ -119,19 +84,28 @@ A Custom Hero:
 ## Research Topics
 
 (5 points) Integrate user authentication
-  -will try to incorporate users local to the site in addition to social media logins
+  -registration local to the site is implemented
 (3 points) Perform client side form validation using custom JavaScript or JavaScript library
+  -use both joi and mongoose validator to have user log in
 (1 - 6 points) Use a client-side JavaScript library or module that we did not cover in class (not including any from other requirements)
-  -will try to incorporate vue.js
+  -vue.js
 (1 - 6 points) Per external API used
-  -marvel developer api, dc comics api
+  -marvel developer api
+(2 points) Integrate ESLint / JSHint / JSLint into your workflow
+  -followed standard javascript style
+(2 points) Use a CSS framework throughout your site, use a reasonable of customization of the framework
+  -Buefy
 
-min: 10 points
-max: 20 points
-
-
-## [Link to Initial Main Project File](./src/allThingsSuperheroes/app.js) 
+min: 14 points
+max: 24 points
 
 
 ## Annotations / References Used
+
+-- Marvel API Documentation
+-- Vue.js Documentation, Vuex
+-- Stack Overflow
+-- W3 Schools (templating)
+-- Buefy Documentation
+-- Joi Docs (github)
 

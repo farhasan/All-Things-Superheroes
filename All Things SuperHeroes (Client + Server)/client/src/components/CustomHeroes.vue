@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="creationForms">
+    <div class="creationForms" v-if="this.$store.state.isUserLoggedIn">
       <h2>Create a Custom Hero!</h2>
       <br>
       <h3>Name</h3>
@@ -31,7 +31,7 @@
       <br>
       <button class="button is-primary" @click="create()">Create</button>
     </div>
-    <div class="heroList">
+    <div class="heroList" v-if="this.$store.state.isUserLoggedIn">
       <h2>View Your Made Heroes</h2><br>
       <table>
         <tr>
@@ -45,6 +45,9 @@
           <td><img v-bind:src="hero.image"></td>
         </tr>
       </table>
+    </div>
+    <div v-if="!this.$store.state.isUserLoggedIn">
+      <h2>You must be logged in to access this feature!</h2>
     </div>
   </div>
 </template>
