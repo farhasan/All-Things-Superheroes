@@ -12,8 +12,7 @@ const User = new mongoose.Schema({ // user that registers and uses the site
   hash: {
     type: String,
     required: 'Please enter a password'
-  },
-  customHeroes: [CustomHero]
+  }
 })
 
 User.plugin(uniqueValidator)
@@ -28,7 +27,7 @@ CustomHero.add({ // customhero made by the user
     required: 'Please enter a description for your hero'
   },
   image: String,
-  user: User
+  user: String
 })
 
 // is the environment variable, NODE_ENV, set to PRODUCTION?

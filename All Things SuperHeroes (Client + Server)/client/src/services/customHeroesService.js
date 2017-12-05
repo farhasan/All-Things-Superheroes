@@ -1,8 +1,10 @@
 import api from './api'
 
 export default {
-  getHeroes () {
-    return api().get('customheroes')
+  getHeroes (user) {
+    return api().get('customheroes', {
+      params: user
+    })
   },
   createHero (hero) {
     return api().post('customheroes', hero)

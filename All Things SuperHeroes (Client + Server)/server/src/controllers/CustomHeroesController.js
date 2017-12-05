@@ -5,7 +5,7 @@ const User = mongoose.model('User')
 
 module.exports = {
     async listHeroes (req, res) {
-       CustomHero.find({}, function (err, customHeroes) {
+       CustomHero.find({user : req.query.user}, function (err, customHeroes) {
            if (err) throw err
            res.send(customHeroes)
        })
@@ -16,7 +16,8 @@ module.exports = {
             new CustomHero({
                 name: req.body.name,
                 description: req.body.description,
-                image: req.body.image
+                image: req.body.image,
+                user: req.body.user
             }).save(function (err, customHeroes) {
                 if (err) {
                     res.status(400).send({

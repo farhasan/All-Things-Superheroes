@@ -60,12 +60,14 @@
         name: null,
         description: null,
         image: null,
-        user: null,
+        user: this.$store.state.user.username,
         error: null
       }
     },
     async mounted () {
-      this.customHeroes = (await customHeroesService.getHeroes()).data
+      this.customHeroes = (await customHeroesService.getHeroes({
+        user: this.user
+      })).data
       console.log(this.customHeroes)
     },
     methods: {
@@ -73,7 +75,8 @@
         const newCustomHero = {
           name: this.name,
           description: this.description,
-          image: this.image
+          image: this.image,
+          user: this.user
         }
         customHeroesService.createHero(newCustomHero)
         window.location = '/customheroes'
