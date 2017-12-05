@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53bc9dd2-2e70-4707-bbc9-d3cc0c0a7183" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/router/index.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js" afterPath="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/main.js">
+      <file leaf-file-name="MarvelService" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/MarvelService">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarvelService" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/MarvelService">
+      <file leaf-file-name="ComicSeries.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/ComicSeries.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,13 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="72" column="10" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="72" selection-end-column="10" />
+            <state relative-caret-position="360">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
-                <element signature="e#1819#1840#0" expanded="true" />
+                <element signature="e#1721#1742#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+              <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -75,47 +72,17 @@
       <file leaf-file-name="MarvelController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="135">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customHeroesService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/customHeroesService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomHeroesController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/CustomHeroesController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authenticationController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="41" column="7" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="41" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomHeroes.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomHeroes.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CustomHeroes.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
+            <state relative-caret-position="1121">
               <caret line="78" column="40" lean-forward="false" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
               <folding />
             </state>
@@ -155,18 +122,21 @@
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/CharactersController.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CharacterView.vue" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/ComicSeries.vue" />
-        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/MarvelService" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Characters.vue" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Event.vue" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/authenticationController.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/db.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/router/index.js" />
-        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue" />
-        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/customHeroesService.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/CustomHeroesController.js" />
         <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CustomHeroes.vue" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Movies.vue" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/DCController.js" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/DCService.js" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js" />
+        <option value="$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue" />
       </list>
     </option>
   </component>
@@ -332,12 +302,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512358658826</updated>
       <workItem from="1512358660896" duration="19484000" />
-      <workItem from="1512418571849" duration="13913000" />
+      <workItem from="1512418571849" duration="14800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33397000" />
+    <option name="totallyTimeSpent" value="34284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="29" width="1810" height="970" extended-state="0" />
@@ -392,7 +362,7 @@
         <state relative-caret-position="1035">
           <caret line="69" column="61" lean-forward="false" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
           <folding>
-            <element signature="e#1819#1840#0" expanded="true" />
+            <element signature="e#1721#1742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,6 +480,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -527,6 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -587,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/ComicSeries.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="79" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="14" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -637,32 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/MarvelService">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="72" column="10" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="72" selection-end-column="10" />
-          <folding>
-            <element signature="e#1819#1840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/CustomHeroesController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -687,19 +625,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js">
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/ComicSeries.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/MarvelService">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/DCController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/services/DCService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/CustomHeroes.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
+        <state relative-caret-position="1121">
           <caret line="78" column="40" lean-forward="false" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/server/src/controllers/MarvelController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Movies.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All Things SuperHeroes (Client + Server)/client/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#1721#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -23,9 +23,6 @@
               <a class="navbar-item" @click="goTo({path: '/events'})">
                 Event
               </a>
-              <a class="navbar-item" href="#">
-                Movie (DC Only)
-              </a>
             </div>
           </div>
           <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" @click="goTo({path: '/login'})">
