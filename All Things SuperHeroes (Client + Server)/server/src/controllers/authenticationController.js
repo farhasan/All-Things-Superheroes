@@ -1,6 +1,5 @@
 const db = require('../db')
 const mongoose = require('mongoose')
-// const CustomHero = mongoose.model('CustomHero')
 const User = mongoose.model('User')
 
 const crypto = require('crypto')

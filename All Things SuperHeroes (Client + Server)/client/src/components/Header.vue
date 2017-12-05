@@ -31,10 +31,10 @@
           <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" @click="goTo({path: '/login'})">
             Login
           </a>
-          <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" onclick="goTo({path: '/register'})">
+          <a v-if="!$store.state.isUserLoggedIn" class="navbar-item" @click="goTo({path: '/register'})">
             Register
           </a>
-          <a v-if="$store.state.isUserLoggedIn" class="navbar-item" href="#">
+          <a v-if="$store.state.isUserLoggedIn" class="navbar-item" @click="goTo({path: '/customheroes'})">
             Create a Custom Hero
           </a>
         </div>

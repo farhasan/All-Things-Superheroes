@@ -6,6 +6,7 @@ import Login from '@/components/Login'
 import Characters from '@/components/Characters'
 import Series from '@/components/ComicSeries'
 import Event from '@/components/Event'
+import CustomHero from '@/components/CustomHeroes'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/events',
       name: 'event',
       component: Event
+    },
+    {
+      path: '/customheroes',
+      name: 'customheroes',
+      component: CustomHero
     }
   ],
   mode: 'history'

@@ -1,35 +1,6 @@
 const mongoose = require('mongoose')
 var uniqueValidator = require('mongoose-unique-validator')
 
-// /*
-// const Comic = new mongoose.Schema({ //comic specific issue
-//     title: String,
-//     issueNumber: Number,
-//     description: String,
-//     image: String,
-//     characters: [Character],
-//     events: [Event]
-// });
-//
-// const Character = new mongoose.Schema({ //comic book character
-//   name: String,
-//   description: String
-//   //comics: [Comic],
-//   //events: [Event]
-// });
-// /*
-// const Event = new mongoose.schema({ //notable event in a comic book
-//     title: String,
-//     description: String,
-//     comics: [Comic],
-//     characters: [Character]
-// });
-// const User = new mongoose.Schema({ //user that registers and uses the site
-//     username: String,
-//     hash: String,
-//     customHeroes: [CustomHero]
-// });*/
-
 let CustomHero = new mongoose.Schema()
 
 const User = new mongoose.Schema({ // user that registers and uses the site
@@ -59,11 +30,6 @@ CustomHero.add({ // customhero made by the user
   image: String,
   user: User
 })
-
-// mongoose.model('Character', Character);
-// mongoose.model('Event', Event);
-// mongoose.model('User', User);
-// mongoose.model('Comic', Comic);
 
 // is the environment variable, NODE_ENV, set to PRODUCTION?
 if (process.env.NODE_ENV === 'PRODUCTION') {
